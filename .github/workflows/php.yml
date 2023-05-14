@@ -1,10 +1,11 @@
-name: php Web application
+name: ITO OS Web application
+
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-    
+
 permissions:
   contents: read
 
@@ -32,4 +33,4 @@ jobs:
           dockerfile: Dockerfile
           username: "${{ secrets.REPO_USERNAME }}"
           password: "${{ secrets.REPO_PASSWORD }}"
-          tags: latest  
+          tags: latest
